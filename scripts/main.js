@@ -25,14 +25,16 @@ $(document).ready(function(){
 
     }); 
 
-  // When the card is clicked
-  $(".card").click(function() {
+    // When the card is clicked
+    $(".card").click(function() {
 
-    // Toggle the price & description text
-    $("#priceText").toggle();
-    $("#descriptionText").toggle();
+      // Toggle the price & description text
+      $("#priceText").toggle();
+      $("#descriptionText").toggle();
 
-    // Resize the image to fit the additional content
-    $(".card-img-top").toggleClass("small");
+      // Resize the image to fit the additional content
+      $(".card-img-top").toggleClass("small");
 
-  });
+    });
+
+ 
