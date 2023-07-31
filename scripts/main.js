@@ -3,6 +3,7 @@ $(document).ready(function(){
 
     console.log("Hello");
 
+
     // -----------------------------------------
     // Home Page
 
@@ -25,7 +26,7 @@ $(document).ready(function(){
     }); 
 
   // When the card is clicked
-  $(".card").click(function(){
+  $(".card").click(function() {
 
     // Toggle the price & description text
     $("#priceText").toggle();

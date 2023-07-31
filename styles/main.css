@@ -4,7 +4,7 @@
 /* Global Styles */
 
 /* Fonts */
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6{
     font-family: 'Libre Baskerville', serif;
 }
 
@@ -14,14 +14,14 @@ p {
 }
 
 /* Spacing */
-.full-height {
+.full-height{
     height: 100vh;
 }
 
 /* ---------------------------------------- */
 /* Components */
 
-button {
+button{
     border: none;
     padding: 16px 20px;
     border-radius: 8px;
@@ -36,16 +36,16 @@ button {
 
 /* Navigation */
 
-.nav-link {
+.nav-link{
     font-family: 'Lato', sans-serif;
     color: rgba(0, 0, 0, 0.60);
 }
 
-.nav-link:hover {
+.nav-link:hover{
     color: #18382B;
 }
 
-.nav-link.active {
+.nav-link.active{
     border-bottom: 2px solid #18382B;
     color: #18382B;
 }
@@ -53,11 +53,11 @@ button {
 
 /* Carousel */
 
-.carousel-item {
+.carousel-item{
     background-color: #E6F2E9;
 }
 
-.carousel-control-next, .carousel-control-prev {
+.carousel-control-next, .carousel-control-prev{
     top: auto;
     right: auto;
     left: 24px;
@@ -68,7 +68,7 @@ button {
     border-radius: 50%;
 }
 
-.carousel-control-next {
+.carousel-control-next{
     left: 84px;
 }
 
@@ -86,9 +86,14 @@ button {
     color: white;
 }
 
+.accordion-button:not(.collapsed){
+    color: white;
+    background-color: #26805c;
+}
+
 /* Card */
 
-.card {
+.card{
     border-radius: 150px 150px 12px 12px;
     background: #F3F3F3;
     text-align: center;
@@ -96,25 +101,25 @@ button {
     border: none;
 }
 
-.card-img-top {
-    width:auto;
-    height:320px;
+.card-img-top{
+    width: auto;
+    height: 320px;
     margin: auto;
     transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1); 
 }
 
-.card-img-top.small {
+.card-img-top.small{
     height:200px;
 }
 
-.card-text {
+.card-text{
     color: #18382B;
 }
 
 /* ---------------------------------------------------------------- */
 /* Home Page */
 
-.hero-image {
+.hero-image{
     height: 90vh; 
     position: relative;
     bottom: -100px;
