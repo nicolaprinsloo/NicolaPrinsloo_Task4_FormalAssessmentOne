@@ -49,7 +49,7 @@ button{
     border: none;
     padding-top: 13px;
     border-radius: 8px;
-    background: #18382B;
+    background: #537266;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     color: white;
@@ -152,7 +152,7 @@ button{
 /* ---------------------------------------------------------------- */
 /* Wishlist */
 
-/* .wishlist{
+.wishlist{
     margin-top: 80px;
 }
 
@@ -163,4 +163,4 @@ button{
 
 .plantName{
     font-weight: bold;
-} */
+}
