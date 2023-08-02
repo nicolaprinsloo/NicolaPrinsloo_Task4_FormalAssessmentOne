@@ -1,10 +1,10 @@
-// -----------------------------------------
-// Plant Array
-// -----------------------------------------
+// ----------------------------------------------------------------
+// Plants Array
+// ----------------------------------------------------------------
 
 const plants = [
   {
-    "name": "Ficus Tree",
+    "name": "Fikus Tree",
     "price": 350,
     "description": "Graceful and lush, this charming indoor plant boasts glossy, emerald-green leaves that effortlessly brighten any space.",
     "image": "plant1.png"
@@ -35,75 +35,71 @@ const plants = [
   }
 ];
 
-
-
-
-// -----------------------------------------
+// ----------------------------------------------------------------
 // When the document loads
-// -----------------------------------------
+// ----------------------------------------------------------------
 
 $(document).ready(function(){
 
-  console.log("Hello");
+    console.log("Hello");
 
-  // -----------------------------------------
-  // Home Page
+    // -----------------------------------------
+    // Home Page
 
-  // When the document loads, animate the hero image upwards
-  $(".hero-image").animate({top: '-=100px'});
+    // When the document loads, animate the hero image upwards
+    $(".hero-image").animate({top: '-=100px'});
 
-  // -----------------------------------------
-  // Browse Page
+    // -----------------------------------------
+    // Browse Page
 
-  loadPlants();
+    loadPlants();
 
 }); 
 
-  // -----------------------------------------
-  // Load All Plants
-  // -----------------------------------------
+// ----------------------------------------------------------------
+// Load all plants
+// ----------------------------------------------------------------
 
-    function loadPlants(){
+function loadPlants() {
 
-      // Load and display all the plants
-      for (let i = 0; 0 < plants.length; i++) {
-        const plant = plants[i];
-
-        console.log(plant);
-        
-        //1: Select the plants container and add the current array to it
-        $("#plantsContainer").append($("#plantCardTemplate").html());
-
-        //2: Create a variable that contains the most recently added plant card
-        let currentChild = $("#plantContainer").children().eq(i+1);
-
-        // 3: Set the content for the plant card from the plants list
-        $(currentChild).find(".card-img-top").attr('src','assets/' + plant.image);
-        $(currentChild).find("#nameText").text(plant.name);
-        $(currentChild).find("#priceText").text('R' + plant.price);
-        $(currentChild).find("#descriptionText").text(plant.description);
-
-        //4: Hide the description text from the current card item
-        $(currentChild).find("#descriptionText").hide();
-
-      }
-    };
-
-  // -----------------------------------------
-  // When the card is clicked
-  // -----------------------------------------
-
-    $("#plantsContainer").on('click','.card', function() {
-  
-
-      // Toggle the price & description text
-      $(this).find("#priceText").toggle();
-      $(this).find("#descriptionText").toggle();
+    // Load and display all the plants
+    for (let i = 0; i < plants.length; i++) {
+      const plant = plants[i];
       
-      // Resize the image to fit the additional content
-      $(this).find(".card-img-top").toggleClass("small");
+      console.log(plant);
 
-    });
+      // 1: Select plants container and add the current array plant to it
+      $("#plantsContainer").append($("#plantCardTemplate").html());
+
+      // 2: Create a varible that contains the most recently added plant card
+      let currentChild = $("#plantsContainer").children().eq(i+1);
+
+      // 3: Set the content for the plant card from the plants list
+      $(currentChild).find(".card-img-top").attr('src','assets/' + plant.image);
+      $(currentChild).find("#nameText").text(plant.name);
+      $(currentChild).find("#priceText").text('R' + plant.price);
+      $(currentChild).find("#descriptionText").text(plant.description);
+
+      // 4: Hide the description text from the plant card
+      $(currentChild).find("#descriptionText").hide();
+
+    }
+}
+
+// ----------------------------------------------------------------
+// When the plant card is clicked
+// ----------------------------------------------------------------
+
+$("#plantsContainer").on('click', '.card', function(){
+
+  // Toggle the price & description text
+  $(this).find("#priceText").toggle();
+  $(this).find("#descriptionText").toggle();
+
+  // Resize the image to fit the additional content
+  $(this).find(".card-img-top").toggleClass("small");
+
+});
 
     
  

@@ -31,6 +31,18 @@ button{
     color: white;
 }
 
+.mt-4{
+    width: 100px;
+    height: 50px;
+    border: none;
+    padding-top: 13px;
+    border-radius: 8px;
+    background: #649782;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
 /* ---------------------------------------- */
 /* Bootstrap Component Overrides */
 
@@ -124,3 +136,19 @@ button{
     position: relative;
     bottom: -100px;
 }
+
+/* ---------------------------------------------------------------- */
+/* Wishlist */
+
+/* .wishlist{
+    margin-top: 80px;
+}
+
+.wishlist-img-top{
+    width: 70px;
+    height: 80px;
+}
+
+.plantName{
+    font-weight: bold;
+} */

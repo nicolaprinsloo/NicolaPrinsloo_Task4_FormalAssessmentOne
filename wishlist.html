@@ -7,7 +7,7 @@
 
     <!-- Style Sheets -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="styles/main.css">
 
     <!-- Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
@@ -16,9 +16,8 @@
     <script src="scripts/main.js"></script>
 
   </head>
-  <body>
 
-    <!-- ------------------------------------------------------------------------------------------------ -->
+      <!-- ------------------------------------------------------------------------------------------------ -->
     <!-- Nav Bar -->
 
     <nav class="navbar fixed-top">
@@ -43,42 +42,49 @@
         </ul>
 
       </div>
+    </nav>
 
-
-    <!-- ------------------------------------------------------------------------------------------------ -->
+  <body>
+    ------------------------------------------------------------------------------------------------
     <!-- Table Content -->
 
-      <table class="table">
-        <thead>
+    <div class="container">
+
+      <table class="table wishlist">
+        <!-- <thead>
           <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
+            <th scope="col">Price</th>
+            <th scope="col">Product</th>
+            <th scope="col"></th>
+            <th scope="col">Remove</th>
           </tr>
-        </thead>
+        </thead> -->
         <tbody>
+
+          <!-- Item 1 -->
           <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
+            <!-- hero-image -->
+            <td>
+              <img src="assets/plant1.png" class="wishlist-img-top" alt="...">
+            </td>
+
+            <!-- text -->
+            <td class="plantName" id="nameText">Ficus Tree</td>
+
+            <!-- price -->
+            <th scope="row" class="priceText" id="priceText">R320</th>
+
+            <!-- remove btn -->
+            <td>
+              <button class="mt-5" id="btn2">Remove</button>
+            </td>
+
           </tr>
         </tbody>
       </table>
 
-    </nav>
+    </div>
+
 
 
 
