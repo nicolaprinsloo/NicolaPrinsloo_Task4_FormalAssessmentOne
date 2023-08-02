@@ -1,4 +1,19 @@
+// -----------------------------------------
+// Plant Array
+// -----------------------------------------
+
+let arrPlants = [
+  {
+    name: "Ficus Tree",
+    price: 350,
+    description: "Graceful and lush, this charming indoor plant boasts glossy, emerald-green leaves that effortlessly brighten any space. Easy to care for and standing at an ideal height, our Ficus Tree is the perfect addition to elevate your interior décor."
+  }
+];
+
+// -----------------------------------------
 // When the document loads
+// -----------------------------------------
+
 $(document).ready(function(){
 
     console.log("Hello");
@@ -25,7 +40,10 @@ $(document).ready(function(){
 
     }); 
 
+    // -----------------------------------------
     // When the card is clicked
+    // -----------------------------------------
+
     $(".card").click(function() {
 
       // Toggle the price & description text
