@@ -101,5 +101,14 @@ $("#plantsContainer").on('click', '.card', function(){
 
 });
 
-    
- 
+// ----------------------------------------------------------------
+// Wishlist: removing items
+// ----------------------------------------------------------------
+  
+$(document).ready(function() {
+  // Attach a click event handler to the remove buttons
+  $('.removeBtn').on('click', function() {
+      // Find the parent row of the clicked button and remove it
+      $(this).closest('tr').remove();
+  });
+});
