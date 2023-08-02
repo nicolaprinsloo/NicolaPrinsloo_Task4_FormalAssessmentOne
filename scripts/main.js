@@ -121,14 +121,15 @@ $(document).ready(function(){
     // When the card is clicked
     // -----------------------------------------
 
-    $(".card").click(function() {
+    $("#plantsContainer").on('click','.card', function() {
+  
 
       // Toggle the price & description text
-      $("#priceText").toggle();
-      $("#descriptionText").toggle();
+      $(this).find("#descriptionText").toggle();
+      $(this).find("#priceText").toggle();
 
       // Resize the image to fit the additional content
-      $(".card-img-top").toggleClass("small");
+      $(this).find(".card-img-top").toggleClass("small");
 
     });
 
