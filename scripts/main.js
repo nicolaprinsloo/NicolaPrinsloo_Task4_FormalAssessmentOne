@@ -94,7 +94,7 @@ function loadPlants(plantsToShow) {
       $("#plantsContainer").append($("#plantCardTemplate").html());
 
       // 2: Create a variable that contains the most recently added plant card
-      let currentChild = $("#plantsContainer").children().eq(i+1);
+      let currentChild = $("#plantsContainer").children().eq(i);
 
       // 3: Set the content for the plant card from the plants list
       $(currentChild).find(".card-img-top").attr('src','assets/' + plant.image);
@@ -112,14 +112,14 @@ function loadPlants(plantsToShow) {
 // When a filter or sort is clicked
 // ----------------------------------------------------------------
 
-$("input[name='filterRadio']").click(Function() {
+$("input[name='filterRadio']").click(function() {
   appliedFilter = $(this).attr('value');
 
   console.log(appliedFilter);
   filterSortPlants();
 });
 
-$("input[name='sortRadio']").click(Function() {
+$("input[name='sortRadio']").click(function() {
   appliedSort = $(this).attr('value');
 
   console.log(appliedSort);
