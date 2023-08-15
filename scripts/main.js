@@ -9,8 +9,8 @@ const arrPlants = [
     "description": "Graceful and lush, this charming indoor plant boasts glossy, emerald-green leaves that effortlessly brighten any space.",
     "image": "plant1.png",
     "lightAmount": "low",
-    "addedDate": "2023-05-15"
-
+    "addedDate": "2023-05-15",
+    "onSale": "sale"
   },
   {
     "name": "White Sprite Succulent",
@@ -26,7 +26,8 @@ const arrPlants = [
     "description": "Boasting tall, sleek, and sword-like leaves, this botanical marvel adds a touch of modern flair to any setting.",
     "image": "plant3.png",
     "lightAmount": "low",
-    "addedDate": "2023-04-15"
+    "addedDate": "2023-04-15",
+    "onSale": "sale"
   },
   {
     "name": "Parlour Palm",
@@ -42,7 +43,8 @@ const arrPlants = [
     "description": "Known for its stunning foliage that transforms with the seasons, this ornamental tree captivates with its delicate, lacy leaves in vibrant shades of red, orange, or gold.",
     "image": "plant5.png",
     "lightAmount": "bright",
-    "addedDate": "2023-06-15"
+    "addedDate": "2023-06-15",
+    "onSale": "sale"
   }
 ];
 
